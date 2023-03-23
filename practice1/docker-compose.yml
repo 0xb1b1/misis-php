@@ -1,0 +1,10 @@
+---
+version: '3.3'
+
+services:
+  php:
+    image: misis-php_practice-1
+    build:
+      context: .
+    ports:
+      - 6970:80

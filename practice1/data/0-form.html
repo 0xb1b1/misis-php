@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student regform</title>
+    </head>
+    <body>
+        <div class="form_body">
+            <h2>Student registration form</h2>
+            <form action="0-form.php" method=POST>
+                First name <br><input type="text" name="first_name" placeholder="Enter your name" required><br>
+                Last name <br><input type="text" name="last_name" placeholder="Enter your surname" required><br>
+                Email <br><input type="email" name="email" placeholder="Enter your email" required><br>
+                Phone <br><input type="tel" name="phone" placeholder="Enter your phone number"><br>
+                <div class="form_course">
+                    <p>
+                        Select a course you wish to attend:<br>
+                        <input type="checkbox" name="courses[]" value="rust">Rust<br>
+                        <input type="checkbox" name="courses[]" value="cxx">Cxx<br>
+                        <input type="checkbox" name="courses[]" value="unix">Unix<br>
+                        <input type="checkbox" name="courses[]" value="infosec">infosec<br>
+                    </p>
+                </div>
+                <div class="additional_info">
+                    <p>
+                        Anything we should know about you?<br>
+                        <textarea name="info" cols="32" rows="5"></textarea>
+                    </p>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset form">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
